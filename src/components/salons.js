@@ -7,7 +7,7 @@ export function Salons(props){
         
         <div className="salon-content">
             <h3 className="salon-name"> {props.name}</h3>
-            <h5 className="salon-description"> desc{props.description}</h5>
+            <h5 className="salon-description"> {props.description}</h5>
         </div>
         </div>
         </div>
