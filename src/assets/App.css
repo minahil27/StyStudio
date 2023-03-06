@@ -1,0 +1,62 @@
+.gallery-text{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1px;
+    
+}
+.listing-text{
+
+    margin-top: 0px;
+    margin: auto;
+    padding-top: 3px;
+    width: 90%;
+    height: 200px;
+    background-color: rgb(7, 121, 77);
+    
+    
+}
+.listing-text p{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.listing{
+    display: grid;
+    margin-top: -50px;
+    padding-top: -50px;
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+}
+.salon-list{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -4rem;
+    padding-left: 40px;
+    
+    
+}
+.salon-card{
+    position: relative;
+    background-color: var(--color-grey-primary);
+    margin: 1rem;
+    flex: 1 0 25rem;
+    max-width: 30rem;
+    max-height: 50rem;
+    padding-bottom: 30px;
+    transition: 0.2s;
+}
+.salon-image{
+    margin-top: 10px;
+    max-width: 75%;
+    height: 150px;
+}
+.salon-content{
+    margin-top: 1px;
+    
+}
+.salon-descrition{
+    padding-top: 0px;
+    color: black;
+}

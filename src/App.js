@@ -1,5 +1,25 @@
+import {Salons} from './components/salons';
+import {Gallery} from './components/gallery';
+import content from './content';
 function App() {
-  return <div className="App">Hello World</div>;
-}
+ 
+  return (<>
+        
+      <Gallery></Gallery>
+      <div className='listing'>
+        {content.map(contents => (
+         <Salons key = {contents.id} image = {contents.image} name = {contents.name} description = {contents.desc}>
+         </Salons>
 
-export default App;
+        ))} 
+      
+        </div>
+        
+    </>
+  );
+  }
+  
+  
+  
+  export default App;
+  
