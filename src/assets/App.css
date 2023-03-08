@@ -59,6 +59,7 @@
     margin-top: 10px;
     max-width: 75%;
     height: 150px;
+    border: .5px solid black;
 }
 .salon-content{
     margin-top: 1px;
@@ -102,7 +103,45 @@
     height: 40px;
     
 }
-.search-btn{
-    border: 0px;
+
+.search-container {
+    position: relative;
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    padding: 0;
+    border: none;
     background-color: transparent;
-}
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar.active {
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    padding: 0 10px;
+  }
+  
+  .search-btn {
+    padding: 10px 20px;
+    border: none;
+    color : transparent;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .search-btn .active{
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: all 2s ease-out;
+  }
+ 
