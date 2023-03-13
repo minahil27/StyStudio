@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 .gallery-text{
     position: relative;
     text-align: center;
     font-size: 50px;
-   /* margin-bottom: 1px;*/
+    font-family: 'Outfit', sans-serif;   /* margin-bottom: 1px;*/
     
 }
 .listing-text{
+    font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -13,7 +18,7 @@
     padding-top: 3px;
     width: 90%;
     height: 200px;
-    background-color: rgb(7, 121, 77);
+    background-color: #96ad90;
     
     
 }
@@ -75,9 +80,10 @@
     width: 90%;
     margin-top: 0px;
     margin: auto;
-    background-color: rgb(7, 121, 77);
+    background-color: #96ad90;
     height: 50px;
     align-items: center;
+    font-family: 'Outfit', sans-serif;
 
 }
 .salon-appointment{
@@ -86,7 +92,7 @@
     width: 90%;
     margin-top: 0px;
     margin: auto;
-    background-color: rgb(7, 121, 77);
+    background-color: #96ad90;
     height: 50px;
     margin-top: 10px;
     align-items: center;
@@ -94,16 +100,27 @@
 
 }
 .salon-reg-text{
+    font-family: 'Outfit', sans-serif;
     margin-left: 30px;
+    font-size: 20px;
 }
 .btn{
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
     margin-right: 20px;
-    background-color: gray;
+    color: rgb(12, 41, 26);
+    background-color: #CBBFBF;
     font-size: 16px;
     height: 40px;
+    font-family: 'Playball', cursive;
+
+}
+.btn:hover{
+    border: 2px solid #0c291a;
     
 }
-
 .search-container {
     position: relative;
   }
@@ -126,8 +143,8 @@
     height: 5vh;
     padding: 0 10px;
   }
-  
-  .search-btn {
+
+.search-btn {
     padding: 10px 20px;
     border: none;
     color : transparent;

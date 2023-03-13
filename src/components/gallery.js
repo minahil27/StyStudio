@@ -5,7 +5,7 @@ export function Gallery(props){
  
     return( <>
       
-      <div className="gallery-text"> <h1 > Gallery </h1> </div>
+      <div className="gallery-text"> <h1> Gallery </h1> </div>
       <SearchBar/>
         {/*salon listing starts here*/}
         <div className='listing'>
