@@ -1,8 +1,7 @@
 export function Salons(props){
-    return( <>
-      
-        <div className = "salon-list"> 
-        <div key = {props.id} className="salon-card">
+    return( <div className = "salon-card"> 
+    <div>
+        <div key = {props.id} >
             <img src = {props.image} alt="salon img" className="salon-image"></img>
         
         {/*<div className="salon-content">*/}
@@ -11,6 +10,6 @@ export function Salons(props){
         {/*</div>*/}
         </div>
         </div>
-        </>
+        </div>
     )
 }
