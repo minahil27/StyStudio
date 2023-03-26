@@ -1,28 +1,26 @@
-import React from 'react'
-import lines from '../assets/curllines.png'
-import asalon from '../assets/asalon.jpg'
-import bsalon from '../assets/bsalon.jpg'
-import csalon from '../assets/csalon.jpg'
+import {Salons} from './salons';
+import content from '../content';
+import { SearchBar } from './searchbar';
+export function Gallery(props){
+ 
+    return(<>
+    
+    <div className='bg-image'>
+        <div className="gallery-text"> <h1> Gallery </h1> </div>
+      
+      <div><SearchBar/>
+      </div>
+      {/*salon listing starts here*/}
+      <div className='salon-container'>
+        {content.map(contents => (
+         <Salons key = {contents.id} image = {contents.image} name = {contents.name} description = {contents.description}>
+         </Salons>
 
-
-
-function Gallery() {
-  return (
-    <div className='gallerytop'>
-        <div className='gallerywidth'>
-        <div className='gallerytext'><h1>Here you can find</h1><h3>The best salons in your area</h3></div>
-        <div className='salonsdata'>
-            <div className='salongal'>
-            <div className='galimg'><img src={asalon} alt="none" /></div>
-            <div className='galimg'><img src={bsalon} alt="none" /></div>
-            <div className='galimg'><img src={csalon} alt="none" /></div>
-            </div>
-        </div>
-        <div className='upbtn'><button className='btn'>See more</button></div>
-        <div className='curlines'><img src={lines} alt="none" /></div>
-        </div>
-    </div>
-  )
+        ))} 
+        
+        </div> {/*salon listing starts here*/}
+        <div className='salon-reg'><h4 className='salon-reg-text'>Want to become the best salon in your area?</h4> <button className='btn-foot'>Register Now!!</button></div>
+        <div className='salon-appointment'><h4 className='salon-reg-text'>Book your appointment today in one of the best salons </h4> <button className='btn-foot'> Book An Appointment</button></div>
+        </div></> 
+    )
 }
-
-export default Gallery
