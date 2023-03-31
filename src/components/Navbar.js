@@ -20,7 +20,7 @@ function Navbar() {
                             <li><a href='/'>About</a></li>
                             <li><a href='/'>Gallery</a></li>
                             <li><a href='/'>Contact</a></li>
-                            <li><a href='/'>Login</a></li>
+                            <li><a href='login'>Login</a></li>
                             <li><a href='/'>Register</a></li>
 
                         </ul>
