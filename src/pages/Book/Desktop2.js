@@ -1,6 +1,14 @@
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Desktop2.module.css";
 
 const Desktop2 = () => {
+  const navigate = useNavigate();
+
+  const onBookClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   return (
     <div className={styles.desktop2}>
       <div className={styles.booking2}>
@@ -39,7 +47,7 @@ const Desktop2 = () => {
           />
           <input className={styles.date} type="text" placeholder="Date" />
           <input className={styles.phone} type="tel" placeholder="Phone No." />
-          <button className={styles.book}>
+          <button className={styles.book} onClick={onBookClick}>
             <b className={styles.book1}>{`Book `}</b>
           </button>
         </div>

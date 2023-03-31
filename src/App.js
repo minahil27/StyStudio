@@ -7,6 +7,7 @@ import {
 import Desktop1 from "./pages/login/Desktop1";
 import Desktop2 from "./pages/Book/Desktop2";
 import Desktop3 from "./pages/login/Desktop3";
+import Home from "./pages/Home";
 import { useEffect } from "react";
 
 function App() {
@@ -37,7 +38,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      default:
+        case "/login":
+          title = "";
+          metaDescription = "";
+          break;
     }
 
     if (title) {
@@ -56,9 +60,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Desktop1 />} />
+      <Route path="/" element={<Home />} />
       <Route path="/Book" element={<Desktop2 />} />
       <Route path="/ForgetPassword" element={<Desktop3 />} />
+      <Route path="/login" element={<Desktop1 />} />
     </Routes>
   );
 }

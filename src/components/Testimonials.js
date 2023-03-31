@@ -2,9 +2,17 @@ import React from 'react'
 import review1 from '../assets/review1.png'
 import review2 from '../assets/review2.png'
 import review3 from '../assets/review3.png'
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function Testimonials() {
+  const navigate = useNavigate();
+
+  const onbookClick = useCallback(() => {
+    navigate("/Book");
+  }, [navigate]);
+
   return (
     <div className='testimonialtop'>
         <div className='testwidth'>
@@ -17,7 +25,7 @@ function Testimonials() {
                 </div>
             </div>
             <div className='booked'><h2>Want to become the best salon in your area?</h2><button>Register Now!!</button></div>
-            <div className='booked'><h2>Book your Appointment today in one of the best salons</h2><button>Book An Appointment</button></div>
+            <div className='booked'><h2>Book your Appointment today in one of the best salons</h2><button onClick={onbookClick}>Book An Appointment</button></div>
         </div>
     </div>
   )

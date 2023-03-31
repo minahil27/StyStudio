@@ -9,6 +9,10 @@ const Desktop1 = () => {
     navigate("/ForgetPassword");
   }, [navigate]);
 
+  const onLoginClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   const onGoogleClick = useCallback(() => {
     window.open("http://www.google.com");
   }, []);
@@ -55,7 +59,7 @@ const Desktop1 = () => {
             minLength={8}
             required
           />
-          <button className={styles.loginButton}>
+          <button className={styles.loginButton} onClick={onLoginClick}>
             <b className={styles.login3}>Login</b>
           </button>
           <div className={styles.dontHaveAn}>{`Don’t have an account? `}</div>

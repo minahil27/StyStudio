@@ -1,7 +1,7 @@
 import {Salons} from './salons';
 import content from '../content';
 import { SearchBar } from './searchbar';
-export function Gallery(props){
+export default function Gallery(props){
  
     return(<>
     

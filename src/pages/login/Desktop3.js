@@ -6,7 +6,7 @@ const Desktop3 = () => {
   const navigate = useNavigate();
 
   const onBookClick = useCallback(() => {
-    navigate("/");
+    navigate("/login");
   }, [navigate]);
 
   return (
